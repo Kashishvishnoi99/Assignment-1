@@ -20,7 +20,7 @@ int isArmstrong(int num){
 		original/=10;
 	}
 original=num;
-while(orginal>0)
+while(original>0)
     int digits=original%10;
     int power=1;
     for(int i=0;i<digits;i++){
@@ -46,7 +46,7 @@ int is Prime(int num){
 	if(num<=1){
 		return 0;
 	}
-	for(int i=2;i*i;<=num;i++){
+	for(int i=2;i*i;i<=num;i++){
 		if(num%i==0){
 			return 0;
 		}
@@ -56,8 +56,9 @@ int is Prime(int num){
 
 // Function to check prime Palindrome
 int isPalidrome(int num){
-	if(isPrime(num)) && num == reverseDigits; 
-	return 1;
+	if (isPrime(num) && num == reverseDigits(num)) 
+    return 1;
+	else
 	return 0;
 }
 
@@ -81,9 +82,9 @@ int main(){
 			scanf("%d", &num);
 		}
 		
-		swtich (choice){
+		switch(choice){
 			case1: if(isArmstrong(num)){
-				primtf("%d is an Armstrong Number.\n", num);
+				printf("%d is an Armstrong Number.\n", num);
 		}else {
 			printf("%d is NOT an armstrong number. \n", num);
 		}
@@ -95,17 +96,18 @@ int main(){
 		}
 			break;
 	case3: if(isPrimePalindrome(num)){
-		printf("%d is an PrimePalidrome number.\n", num);
+		printf("%d is an PrimePalindrome number.\n", num);
 	}	else {
-		printf("%d is NOT a PrimePalidrome number.\n", num);
+		printf("%d is NOT a PrimePalindrome number.\n", num);
 	}
-	break:
+	break;
 		default:
 			printf("Invalid choice! Please select between 1-4\n");
 	}
 }
-while(choce!=4);
+while(choice!=4);
 return 0;
 }
+
 
 
