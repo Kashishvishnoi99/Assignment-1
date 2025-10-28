@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "arraylib.h.h"
+#include "arraylib.h"
 
 int main(void){
 	int a[]={3,1,4,5};
@@ -17,4 +17,5 @@ int main(void){
 	
 	return 0;
 }
+
 
