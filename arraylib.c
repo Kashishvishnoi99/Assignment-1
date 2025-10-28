@@ -1,5 +1,5 @@
 #include<stdio.h>
-#include "arraylib.h.h"
+#include "arraylib.h"
 
 void DisplayArray(int arr[],int size){
 	for(int i=0;i<size;i++){
@@ -59,6 +59,7 @@ void LinearSearch(int arr[], int size,int value){
 	    return -1;
 	}
 }
+
 
 
 
