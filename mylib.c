@@ -34,10 +34,10 @@ return (sum==num);
 //  Function to check if a number is Adams number 
 
 int isAdams (int num){
-	int square,rev,revsquare;
+	int square,revnum,revsq;
 	square=num*num;
-	rev=rev*rev;
-	return reverseDigits(square)==revsquare;
+	revsq=revnum*revnum;
+	return (square==reverseDigits(revsq));
 }
 
 // Function to check if number is prime
@@ -46,7 +46,7 @@ int is Prime(int num){
 	if(num<=1){
 		return 0;
 	}
-	for(int i=2;i*i;i<=num;i++){
+	for(int i=2;i*i<=num;i++){
 		if(num%i==0){
 			return 0;
 		}
@@ -108,6 +108,7 @@ int main(){
 while(choice!=4);
 return 0;
 }
+
 
 
 
